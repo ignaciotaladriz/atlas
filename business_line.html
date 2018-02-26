@@ -1,17 +1,161 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Bussines Line</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+	
 </head>
 
 <body>
-	<div class="row no-gutters">
-  		<div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
-  		<div class="col-6 col-md-4">.col-6 .col-md-4</div>
-	</div>
 	
+	<!-- Navbar -->
+	
+	<nav class="navbar navbar-dark bg-primary">	
+	<img src="imag/logo.png"  width="81" height="32" alt="AIM Manager">	
+		
+	<div class="col-2">
+		
+	<!-- Selecccionar Cuenta -->
+		
+		<div class="btn-group">
+ 			 <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuenta
+ 			 </button>
+  			<div class="dropdown-menu">
+  			    <a class="dropdown-item" href="#">Wallmart</a>
+    			<a class="dropdown-item" href="#">SMU</a>
+ 			</div>
+		</div>
+		
+	<!-- Fin Selecccionar Cuenta -->
+		
+		<img src="imag/icon_history.png"  width="24" height="24" alt="Ver Historias">
+		<img src="imag/icon_coment.png"  width="24" height="24" alt="Ver Comentarios">
+		<img src="imag/icon_help.png"  width="24" height="24" alt="Ver Ayuda">
+		<img src="imag/icon_users.png"  width="36" height="36" alt="Ver Mi Perfil">
+	
+	</nav>
+		
+	<!-- Fin Navbar -->
+		
+	<div class="row no-gutters"></div>
+		</div>
+	
+	
+	
+	<div class="row">
+  
+	<!-- Nav Vertical -->
+		
+		<div class="col-2">
+
+
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">
+						<img src="imag/icon_dashboard.png" width="25" height="25" alt="Dashboard">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">
+						<img src="imag/icon_account.png" width="25" height="25" alt="Cuenta">Cuenta</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img src="imag/icon_check.png" width="25" height="25" alt="Checklist">Checklist</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img src="imag/icon_incident.png" width="25" height="25" alt="Incidentes">Incidentes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img src="imag/icon_assets.png" width="25" height="25" alt="Activos">Activos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img src="imag/icon_venue.png" width="25" height="25" alt="Recintos">Recintos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<img src="imag/icon_task.png" width="25" height="25" alt="Tareas">Tareas</a>
+				</li>			
+			</ul>
+
+		</div>
+		
+	<!-- Content -->
+		
+			<div class="col-10">
+
+	<!-- breadcrumb -->
+
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Cuenta</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Business Line</li>
+					</ol>
+				</nav>
+
+	<!-- Titulo Modulo -->
+
+				<h1>Business Line</h1>
+				
+	<!-- Fin Titulo Modulo -->
+				
+	<!-- Acciones del Modulo -->
+					<div class="row">
+						<div class="col-10">
+							<ul class="nav nav-tabs">
+								  <li class="nav-item">
+										<a class="nav-link active" href="#">Filtros</a>
+								  </li>
+								  <li class="nav-item">
+										<a class="nav-link" href="#">Exportar</a>
+								  </li>
+								  <li class="nav-item">
+										<a class="nav-link" href="#">Importar</a>
+								  </li>
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="filtros" role="tabpanel" aria-labelledby="pills-home-tab">
+								<form>
+									  <div class="form-group">
+										<label for="namme_bl">Nombre</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									  </div>
+									  <div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									  </div>
+									  <div class="form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									  </div>
+									  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="exportar" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+							<div class="tab-pane fade" id="importar" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<img src="imag/icon_delet.png"  width="24" height="24" alt="Eliminar">
+							<img src="imag/icon_double.png"  width="24" height="24" alt="Duplicar">
+							<img src="imag/icon_edit.png"  width="24" height="24" alt="Editar">
+							<button type="button" class="btn btn-primary">Crear</button>
+						</div>
+					</div>
+	<!-- Fin Acciones del Modulo -->
+				
+			</div>
+		
+	<!-- Fin Content -->
+		
+	</div>	
 	
 </body>
 </html>
