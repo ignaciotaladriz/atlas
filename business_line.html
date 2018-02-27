@@ -2,95 +2,162 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Bussines Line</title>
+<title>Bussines Line</title>	
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-
-	
+<link href="css/atlas.css" rel="stylesheet" type="text/css">
 </head>
-
+	
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+	
 <body>
 	
-	<!-- Navbar -->
+	<div class="container-fluid">
+	<header>
+		
+<!-- Navbar -->
 	
-	<nav class="navbar navbar-dark bg-primary">	
-	<img src="imag/logo.png"  width="81" height="32" alt="AIM Manager">	
+		<nav class="navbar navbar-dark bg-primary">	
+		<div class="row">	
+			<div class="col-4">
+				<img src="imag/logo.png"  width="81" height="32" alt="AIM Manager">	
+			</div>
+			
+			
+<!-- Selecccionar Cuenta -->
+			
+			<div class="col-4">
+
+				<div class="btn-group">
+					 <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuenta
+					 </button>
+					
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Wallmart</a>
+						<a class="dropdown-item" href="#">SMU</a>
+					</div>
+					
+				</div>
+            </div>
 		
-	<div class="col-2">
-		
-	<!-- Selecccionar Cuenta -->
-		
-		<div class="btn-group">
- 			 <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuenta
- 			 </button>
-  			<div class="dropdown-menu">
-  			    <a class="dropdown-item" href="#">Wallmart</a>
-    			<a class="dropdown-item" href="#">SMU</a>
- 			</div>
+<!-- Fin Selecccionar Cuenta -->
+			
+			<div class="col-4">
+				
+				<img class="col-1" src="imag/icon_history.png"  width="24" height="24" alt="Ver Historias">
+				<img src="imag/icon_coment.png"  width="24" height="24" alt="Ver Comentarios">
+				<img src="imag/icon_help.png"  width="24" height="24" alt="Ver Ayuda">
+				<img src="imag/icon_users.png"  width="36" height="36" alt="Ver Mi Perfil">
+			</div>
+					
 		</div>
+		</nav>
 		
-	<!-- Fin Selecccionar Cuenta -->
-		
-		<img src="imag/icon_history.png"  width="24" height="24" alt="Ver Historias">
-		<img src="imag/icon_coment.png"  width="24" height="24" alt="Ver Comentarios">
-		<img src="imag/icon_help.png"  width="24" height="24" alt="Ver Ayuda">
-		<img src="imag/icon_users.png"  width="36" height="36" alt="Ver Mi Perfil">
+
+<!-- Fin Navbar -->
 	
-	</nav>
-		
-	<!-- Fin Navbar -->
-		
-	<div class="row no-gutters"></div>
-		</div>
+	</header>	
+	</div>
 	
+	<section class="main">
 	
 	
 	<div class="row">
-  
-	<!-- Nav Vertical -->
-		
-		<div class="col-2">
+ 		 <div class="col-2">
 
+<!-- Nav Vertical -->
 
-			<ul class="nav flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">
-						<img src="imag/icon_dashboard.png" width="25" height="25" alt="Dashboard">Dashboard</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">
-						<img src="imag/icon_account.png" width="25" height="25" alt="Cuenta">Cuenta</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img src="imag/icon_check.png" width="25" height="25" alt="Checklist">Checklist</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img src="imag/icon_incident.png" width="25" height="25" alt="Incidentes">Incidentes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img src="imag/icon_assets.png" width="25" height="25" alt="Activos">Activos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img src="imag/icon_venue.png" width="25" height="25" alt="Recintos">Recintos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<img src="imag/icon_task.png" width="25" height="25" alt="Tareas">Tareas</a>
-				</li>			
-			</ul>
+				<div id="accordion">
+				  <div class="card">
+					<div class="card-header">
+					  <h5 class="mb-0">
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="imag/icon_dashboard.png" width="25" height="25" alt="Dashboard"></a>
+						  Dashboard
+						</button>
+					  </h5>
+					</div>
+						  <div class="card-header" id="headingOne">
+					  <h5 class="mb-0">
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="imag/icon_account.png" width="25" height="25" alt="Cuenta"></a>
+						  Cuenta
+						</button>
+					  </h5>
+					</div>
+
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					  <div class="card-body">
+						<div class="list-group">
+				  <button type="button" class="list-group-item list-group-item-action active">
+					Bussines Line
+				  </button>
+				  <button type="button" class="list-group-item list-group-item-action">Business Area</button>
+				  <button type="button" class="list-group-item list-group-item-action">Busines Title</button>
+				  <button type="button" class="list-group-item list-group-item-action">Business Venues</button>
+				  <button type="button" class="list-group-item list-group-item-action">Venues Zone</button>
+				  <button type="button" class="list-group-item list-group-item-action">Usuarios</button>
+				</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" id="headingTwo">
+					  <h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><img src="imag/icon_check.png" width="25" height="25" alt="Checklist"></a>
+						  Checklist
+						</button>
+					  </h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					  <div class="card-body">
+						 <div class="list-group">
+				  <button type="button" class="list-group-item list-group-item-action active"><img src="imag/icon_incident.png" width="25" height="25" alt="Incidentes">Incidentes</a>
+					Incidentes
+				  </button>
+				  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+				  <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+				  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+				  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+				</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" id="headingThree">
+					  <h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><img src="imag/icon_assets.png" width="25" height="25" alt="Activos"></a>
+						  Activos
+						</button>
+					  </h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					  <div class="card-body">
+					   <div class="list-group">
+				  <button type="button" class="list-group-item list-group-item-action active">
+					Recintos
+				  </button>
+				  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+				  <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+				  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+				  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+				</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			 
+<!-- fin prueba -->
+			 
+			 
+<!-- Fin Nav Vertical -->
 
 		</div>
 		
-	<!-- Content -->
+<!-- Content -->
 		
 			<div class="col-10">
 
-	<!-- breadcrumb -->
+<!-- breadcrumb -->
 
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -99,17 +166,26 @@
 					</ol>
 				</nav>
 
-	<!-- Titulo Modulo -->
-
-				<h1>Business Line</h1>
+<!-- Titulo Modulo -->
+				<div class="row">
+					<div class="col-9">
+					<h1>Business Line</h1>
+					</div>
+					<div class="col-3">
+					<button type="button" class="btn btn-primary">Crear</button>
+							<img src="imag/icon_delet.png"  width="24" height="24" alt="Eliminar">
+							<img src="imag/icon_double.png"  width="24" height="24" alt="Duplicar">
+							<img src="imag/icon_edit.png"  width="24" height="24" alt="Editar">
+					</div>
+				</div>
+					
+<!-- Fin Titulo Modulo -->
 				
-	<!-- Fin Titulo Modulo -->
-				
-	<!-- Acciones del Modulo -->
+<!-- Acciones del Modulo -->
 					<div class="row">
-						<div class="col-10">
+						<div class="col-11">
 							<ul class="nav nav-tabs">
-								  <li class="nav-item">
+								  <li class="nav-item" id="pills-tabContent">
 										<a class="nav-link active" href="#">Filtros</a>
 								  </li>
 								  <li class="nav-item">
@@ -121,41 +197,43 @@
 							</ul>
 							<div class="tab-content" id="pills-tabContent">
 							<div class="tab-pane fade show active" id="filtros" role="tabpanel" aria-labelledby="pills-home-tab">
+								<br>
 								<form>
 									  <div class="form-group">
 										<label for="namme_bl">Nombre</label>
 										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 									  </div>
-									  <div class="form-group">
-										<label for="exampleInputPassword1">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-									  </div>
 									  <div class="form-check">
 										<input type="checkbox" class="form-check-input" id="exampleCheck1">
 										<label class="form-check-label" for="exampleCheck1">Check me out</label>
 									  </div>
-									  <button type="submit" class="btn btn-primary">Submit</button>
+									  <button type="button" class="btn btn-success">Filtrar</button>
 								</form>
 							</div>
 							<div class="tab-pane fade" id="exportar" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
 							<div class="tab-pane fade" id="importar" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 							</div>
 						</div>
-						<div class="col-2">
-							<img src="imag/icon_delet.png"  width="24" height="24" alt="Eliminar">
-							<img src="imag/icon_double.png"  width="24" height="24" alt="Duplicar">
-							<img src="imag/icon_edit.png"  width="24" height="24" alt="Editar">
-							<button type="button" class="btn btn-primary">Crear</button>
+	
+											
+<!-- Mensaje -->		
+						
+						<div class="alert alert-primary" role="alert">This is a primary alert—check it out!
 						</div>
+						
+<!-- Fin Mensaje -->	
 					</div>
-	<!-- Fin Acciones del Modulo -->
+				
+<!-- Fin Acciones del Modulo -->
 				
 			</div>
 		
 	<!-- Fin Content -->
 		
 	</div>	
+		
+	</section>
 	
 </body>
 </html>
